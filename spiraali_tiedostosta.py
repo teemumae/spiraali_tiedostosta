@@ -11,6 +11,10 @@ def draw_spiral(line_color, arcs, r, r_growth, pen=1):
         r+=r_growth
     up()
 def piirra_tiedostosta(tiedosto):
+    spiraali = []
+    with open(tiedosto) as spiraalit:
+        for rivi in spiraalit:
+            spiraali.append(rivi.split(','))
 
-    draw_spiral(vari, kaaret, r, r_kasvu, viiva)
+            draw_spiral(vari, kaaret, r, r_kasvu, viiva)
 piirra_tiedostosta('spiraali.txt')
