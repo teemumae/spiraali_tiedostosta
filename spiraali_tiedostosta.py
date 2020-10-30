@@ -32,5 +32,5 @@ def piirra_tiedostosta(tiedosto):
                 viiva = int(spiraali[i][j])
                 #viiva = viiva.strip
         draw_spiral(vari, kaaret, r, r_kasvu, viiva)
-piirra_tiedostosta('spiraali.txt')
+piirra_tiedostosta('mtvkdmfwve.txt')
 done()
